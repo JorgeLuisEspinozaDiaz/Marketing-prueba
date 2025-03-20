@@ -35,3 +35,4 @@ bootstrap().then(() => console.log('NestJS App Initialized'));
 
 // Exportar handler para AWS Lambda
 export const handler: Handler = configure({ app: expressApp });
+ 
