@@ -2,7 +2,7 @@ import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { GetCampaignsQuery } from './get-campaigns.query';
-import { Campaign } from 'src/domain/entities/campaign.entity';
+import { Campaign } from '../../../../domain/entities/campaign.entity';
 
 @QueryHandler(GetCampaignsQuery)
 export class GetCampaignsHandler implements IQueryHandler<GetCampaignsQuery> {

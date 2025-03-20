@@ -1,8 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { QueryBus } from '@nestjs/cqrs';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { GetUserQuery } from 'src/application/Queries/users/list/get-users.query';
-import { User } from 'src/domain/entities/user.entity';
+import { GetUserQuery } from '../../application/Queries/users/list/get-users.query';
+import { User } from '../../domain/entities/user.entity';
 
 @ApiTags('Users')
 @Controller('api/user')

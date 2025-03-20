@@ -12,6 +12,8 @@ const expressApp = express();
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, new ExpressAdapter(expressApp));
 
+  app.enableCors();
+
   // Configurar validaciones globales
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }));
 

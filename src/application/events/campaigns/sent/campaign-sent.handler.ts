@@ -1,9 +1,9 @@
 import { EventsHandler, IEventHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Campaign } from 'src/domain/entities/campaign.entity';
+import { Campaign } from '../../../../domain/entities/campaign.entity';
 import { Repository } from 'typeorm';
 import { CampaignSentEvent } from './campaign-sent.event';
-import { Message } from 'src/domain/entities/message.entity';
+import { Message } from '../../../../domain/entities/message.entity';
 
 @EventsHandler(CampaignSentEvent)
 export class CampaignSentHandler implements IEventHandler<CampaignSentEvent> {

@@ -1,7 +1,7 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { GetUserQuery } from './get-users.query';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User } from 'src/domain/entities/user.entity';
+import { User } from '../../../../domain/entities/user.entity';
 import { Repository } from 'typeorm';
 
 @QueryHandler(GetUserQuery) 

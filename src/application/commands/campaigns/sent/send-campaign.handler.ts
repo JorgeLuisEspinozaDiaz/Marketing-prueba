@@ -1,11 +1,11 @@
 import { CommandHandler, EventBus, ICommandHandler } from '@nestjs/cqrs';
 import { SendCampaignCommand } from './send-campaign.command';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Campaign } from 'src/domain/entities/campaign.entity';
-import { Message } from 'src/domain/entities/message.entity';
+import { Campaign } from '../../../../domain/entities/campaign.entity';
+import { Message } from '../../../../domain/entities/message.entity';
 import { Repository } from 'typeorm';
-import { TwilioService } from 'src/infrastructure/configuration/twilio.service';
-import { CampaignSentEvent } from 'src/application/events/campaigns/sent/campaign-sent.event';
+import { TwilioService } from '../../../../infrastructure/configuration/twilio.service';
+import { CampaignSentEvent } from '../../../../application/events/campaigns/sent/campaign-sent.event';
 
 @CommandHandler(SendCampaignCommand)
 export class SendCampaignHandler

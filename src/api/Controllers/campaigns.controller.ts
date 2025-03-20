@@ -1,11 +1,11 @@
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { CreateCampaignCommand } from 'src/application/commands/campaigns/CreateCampaignCommand';
-import { CreateCampaignDto } from 'src/application/commands/campaigns/CreateCampaignDTO';
-import { SendCampaignCommand } from 'src/application/commands/campaigns/sent/send-campaign.command';
-import { GetCampaignsQuery } from 'src/application/Queries/campaigns/list/get-campaigns.query';
-import { Campaign } from 'src/domain/entities/campaign.entity';
+import { CreateCampaignCommand } from '../../application/commands/campaigns/CreateCampaignCommand';
+import { CreateCampaignDto } from '../../application/commands/campaigns/CreateCampaignDTO';
+import { SendCampaignCommand } from '../../application/commands/campaigns/sent/send-campaign.command';
+import { GetCampaignsQuery } from '../../application/Queries/campaigns/list/get-campaigns.query';
+import { Campaign } from '../../domain/entities/campaign.entity';
 
 @ApiTags('Campaigns')
 @Controller('api/campaigns')

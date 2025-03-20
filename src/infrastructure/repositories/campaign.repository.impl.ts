@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Campaign } from "src/domain/entities/campaign.entity";
-import { CampaignRepository } from "src/domain/repositories/campaign.repository";
+import { Campaign } from "../../domain/entities/campaign.entity";
+import { CampaignRepository } from "../../domain/repositories/campaign.repository";
 import { Repository } from "typeorm";
 
 

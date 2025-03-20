@@ -1,7 +1,7 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Campaign } from 'src/domain/entities/campaign.entity';
+import { Campaign } from '../../../domain/entities/campaign.entity';
 import { CreateCampaignCommand } from './CreateCampaignCommand';
  
 @CommandHandler(CreateCampaignCommand)

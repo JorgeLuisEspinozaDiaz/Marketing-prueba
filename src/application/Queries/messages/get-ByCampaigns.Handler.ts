@@ -1,7 +1,7 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { GetMessageByCampaignsQuery } from './get-ByCampaigns.query';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Message } from 'src/domain/entities/message.entity';
+import { Message } from '../../../domain/entities/message.entity';
 import { Repository } from 'typeorm';
 
 @QueryHandler(GetMessageByCampaignsQuery)

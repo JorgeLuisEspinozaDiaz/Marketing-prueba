@@ -1,8 +1,8 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { QueryBus } from '@nestjs/cqrs';
 import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { GetMessageByCampaignsQuery } from 'src/application/Queries/messages/get-ByCampaigns.query';
-import { Message } from 'src/domain/entities/message.entity';
+import { GetMessageByCampaignsQuery } from '../../application/Queries/messages/get-ByCampaigns.query';
+import { Message } from '../../domain/entities/message.entity';
 
 @ApiTags('Mensajes')
 @Controller('api/messages')
