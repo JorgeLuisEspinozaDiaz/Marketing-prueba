@@ -17,9 +17,6 @@ plugins:
  
 
 custom:
-  webpack:
-    webpackConfig: ./webpack.config.js  # ✅ Asegura que Webpack encuentre el archivo
-    includeModules: true
   serverless-offline:
   noPrependStageInUrl: true  # 🔥 Evita que agregue /local o /dev
 
