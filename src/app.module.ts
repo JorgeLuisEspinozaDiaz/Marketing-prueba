@@ -19,7 +19,6 @@ import { ConfigModule } from '@nestjs/config';
       synchronize: true,
       extra: {
         connectionLimit: 10,   
-        acquireTimeout: 20000, 
         connectTimeout: 20000,  
         waitForConnections: true,  
       },
